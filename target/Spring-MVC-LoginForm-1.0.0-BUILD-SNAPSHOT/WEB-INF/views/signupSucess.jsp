@@ -8,9 +8,12 @@
 </head>
 <body>
 	<font color="green"><h2>Congratulation!</h2></font>
-	<p><h2>${msg}</h2> You have successfully created an account in HealthCare system.<br> 
-	Please login to make use of our services.</p>
-	
-	<p> Please use your email id as username for signin purpose </p>
+	<p>
+	<h2>${msg}</h2>
+	You have successfully created an account in HealthCare system.
+	<br> Please login to make use of our services.
+	</p>
+
+	<p>Please use your email id as username for signin purpose</p>
 </body>
 </html>

@@ -1,4 +1,4 @@
-package com.spring.util;
+package com.spring.healthcare.util;
 
 import java.security.SecureRandom;
 

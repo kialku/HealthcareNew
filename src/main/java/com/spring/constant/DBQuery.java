@@ -3,7 +3,7 @@ package com.spring.constant;
 public final class DBQuery {
 
 	private DBQuery(){
-		// so that no one creates an instane of this class
+		// so that no one creates an instance of this class
 	}
 	
 	public static final String CREATE_NEW_USER_QUERY = "INSERT INTO USER (USERID, FNAME, LNAME, DOB, GENDER, PHONENUM, MAILID, CITY, PINCODE, ADDRESS)"
@@ -12,5 +12,19 @@ public final class DBQuery {
 	public static final String ADD_USER_PASSWORD = "INSERT INTO PASSWORD (USERID, PASSWORD) VALUES (?,?)";
 	
 	public static final String VALIDATE_USER_CREDENTIALS = "SELECT COUNT(1) FROM PASSWORD WHERE USERID = (SELECT USERID FROM USER WHERE MAILID = ?) AND PASSWORD = ?";
+	
+	public static final String READ_USER_DETAILS = "SELECT * FROM USER WHERE MAILID = ?";
+	
+	public static final String ADD_NEW_APPOINTMENT = "INSERT INTO APPOINTMENT (APPOINTMENTID, USERID, APPOINTMENTDTTM, SERVICE, PROVIDER, STATUS) VALUES (?,?,?,?,?,?)";
+	
+	public static final String IS_EMAIL_USED = "SELECT COUNT(1) FROM USER WHERE MAILID = ?";
+	
+	public static final String IS_VALID_APPOINTMENT = "SELECT COUNT(1) FROM APPOINTMENT A WHERE A.APPOINTMENTID = ? AND upper(A.STATUS)='SCHEDULED' AND A.USERID = (SELECT USERID FROM USER U WHERE U.MAILID=?)";
+	
+	public static final String CANCEL_APPOINTMENT = "UPDATE APPOINTMENT SET STATUS = ? WHERE APPOINTMENTID = ?";
+	
+	public static final String READ_USER_APPOINTMENTS = "SELECT * FROM APPOINTMENT WHERE USERID = ? ORDER BY APPOINTMENTDTTM DESC";
+	
+	public static final String MARK_APPOINTMENTS_COMPLETED = "UPDATE APPOINTMENT SET STATUS='completed' WHERE STATUS = 'scheduled' AND APPOINTMENTDTTM <= NOW()";
 	
 }
