@@ -41,7 +41,7 @@
 			<div class="col-lg-8">
 				<div id="message">
 				</div>
-				<form action="/Spring-MVC-LoginForm-1.0.0-BUILD-SNAPSHOT/admin"
+				<form action="/Spring-MVC-LoginForm/admin"
 					role="form" class="signin-form form-horizontal" id="register_form"
 					method="post">
 					<div class="form-group" class="sr-only">
@@ -56,9 +56,9 @@
 							class="form-control" id="password" name="password"
 							placeholder="Enter Your Last Name or Family Name">
 					</div>
-					<div class="form-group" class="sr-only">
+					<!-- <div class="form-group" class="sr-only">
 						<input type="radio" name="action1" value="statusChange" Checked> <label for="password">Mark Appointment as Completed </label>
-					</div>
+					</div> -->
 					<div class="form-group form-inline" class="sr-only">
 						<button type="submit" class="btn btn-primary">Submit</button>
 						<button type="reset" class="btn btn-danger">Reset</button>

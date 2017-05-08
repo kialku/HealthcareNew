@@ -35,7 +35,7 @@
 			<div class="col-lg-8">
 				<div id="message">
 				</div>
-				<form action="/Spring-MVC-LoginForm-1.0.0-BUILD-SNAPSHOT/signin"
+				<form action="/Spring-MVC-LoginForm/signin"
 					role="form" class="signin-form form-horizontal" id="register_form"
 					method="post">
 					<div class="form-group" class="sr-only">

@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.spring</groupId>
 	<artifactId>Spring-MVC-LoginForm</artifactId>
-	<name>Spring-MVC-LoginForm</name>
+	<name>Spring-MVC-LoginForm-1.0.0-BUILD-SNAPSHOT</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>

@@ -15,6 +15,12 @@ public final class DBQuery {
 	
 	public static final String READ_USER_DETAILS = "SELECT * FROM USER WHERE MAILID = ?";
 	
+	public static final String FIND_USER_BY_ID = "SELECT * FROM USER WHERE USERID = ?";
+	
+	public static final String LIST_ALL_USERS = "SELECT * FROM USER ORDER BY FNAME ASC";
+	
+	public static final String FETCH_APPOINTMENTS = "SELECT * FROM APPOINTMENT ORDER BY APPOINTMENTDTTM DESC";
+	
 	public static final String ADD_NEW_APPOINTMENT = "INSERT INTO APPOINTMENT (APPOINTMENTID, USERID, APPOINTMENTDTTM, SERVICE, PROVIDER, STATUS) VALUES (?,?,?,?,?,?)";
 	
 	public static final String IS_EMAIL_USED = "SELECT COUNT(1) FROM USER WHERE MAILID = ?";

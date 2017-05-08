@@ -67,7 +67,7 @@ function FormValidation(){
 			<h2 id="heading" class="text-center">Enter following details to book an appointment</h2>
 			<div class="col-lg-2"></div>
 			<div class="col-lg-8">
-				<form action="/Spring-MVC-LoginForm-1.0.0-BUILD-SNAPSHOT/newappointment"
+				<form action="/Spring-MVC-LoginForm/newappointment"
 					role="form" class="signin-form form-horizontal" id="appointment_form"
 					method="post" onsubmit="return FormValidation();">
 					

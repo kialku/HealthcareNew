@@ -45,7 +45,7 @@
 				<div id="message">
 					<form:errors path="student1.*" />
 				</div>
-				<form action="/Spring-MVC-LoginForm-1.0.0-BUILD-SNAPSHOT/signup"
+				<form action="/Spring-MVC-LoginForm/signup"
 					role="form" class="signin-form form-horizontal" id="register_form"
 					method="post">
 					<div class="form-group" class="sr-only">

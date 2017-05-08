@@ -38,7 +38,7 @@
 			<div class="col-lg-2"></div>
 
 			<div class="col-lg-8">
-				<form action="/Spring-MVC-LoginForm-1.0.0-BUILD-SNAPSHOT/cancelappointment"
+				<form action="/Spring-MVC-LoginForm/cancelappointment"
 					role="form" class="signin-form form-horizontal" id="register_form"
 					method="post">
 					<div class="form-group" class="sr-only">
